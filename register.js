@@ -61,6 +61,8 @@ async function register(data) {
       nextButtonPage2.click(),
     ]);
 
+    console.log("Puppeteer is running....");
+
     // Login
     await page.type("#_username", data.username);
     await page.type("#_password", data.password);
