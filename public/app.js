@@ -111,7 +111,7 @@ async function startChecker(domainName, registerData) {
     } catch (error) {
       console.log(error);
     }
-  }, 4000);
+  }, randomNumber(40, 80));
 }
 
 async function register(data) {

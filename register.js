@@ -3,12 +3,13 @@ const puppeteer = require("puppeteer");
 async function register(data) {
   try {
     const browser = await puppeteer.launch({
-      args: [
-        "--disable-features=IsolateOrigins,site-per-process",
-        "--disable-web-security",
-        "--no-sandbox",
-        "--disable-setuid-sandbox",
-      ],
+      headless: false,
+      // args: [
+      //   "--disable-features=IsolateOrigins,site-per-process",
+      //   "--disable-web-security",
+      //   "--no-sandbox",
+      //   "--disable-setuid-sandbox",
+      // ],
     });
     const page = await browser.newPage();
 
